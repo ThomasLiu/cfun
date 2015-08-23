@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDV.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVAvailability.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVAvailabilityDeprecated.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVPlugin.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVPluginResult.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVViewController.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVWhitelist.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVDebug.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVTimer.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/NSData+Base64.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVJSON.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/CordovaLib/Classes/CDVJSON_private.h

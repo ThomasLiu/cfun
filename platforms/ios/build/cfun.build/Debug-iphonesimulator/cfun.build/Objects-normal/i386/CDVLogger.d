@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/cfun/Plugins/cordova-plugin-console/CDVLogger.m \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/cfun/Plugins/cordova-plugin-console/CDVLogger.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/user/WebstormProjects/mobileApp/cfun/platforms/ios/build/emulator/include/Cordova/CDVJSON.h

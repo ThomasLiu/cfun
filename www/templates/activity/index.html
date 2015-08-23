@@ -1,0 +1,69 @@
+<ion-view view-title="活动列表">
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+
+        <div class="list card cfun-activity-card" ng-repeat="item in activityLists">
+          <div class="item item-avatar cfun-activity-card-title">
+            <img src="{{item.captain.face}}">
+            <h2>{{item.captain.name}}</h2>
+            <p><i class="icon ion-star" ng-repeat="stats in item.captain.stats"></i></p>
+          </div>
+
+          <div class="item item-body">
+            <img class="full-image" src="img/activity/{{item.img}}">
+
+            <div class="img-label right" style="top: 35px;left: 70%;">
+                <div class="img-label-content">
+                    <span class="arrow"></span>
+                    <span class="text">{{item.value | currency:"¥" }}</span>
+                </div>
+                <i class="icon ion-record"></i>
+            </div>
+            <div class="img-label right" style="top: 150px;left: 70%;">
+              <div class="img-label-content">
+                <span class="arrow"></span>
+                <span class="text">{{item.activityType}}</span>
+              </div>
+              <i class="icon ion-record"></i>
+            </div>
+            <div class="img-label right" style="top: 65px;left: 70%;">
+              <div class="img-label-content">
+                <span class="arrow"></span>
+                <span class="text">{{item.area}}</span>
+              </div>
+              <i class="icon ion-location"></i>
+            </div>
+
+            <div class="cfun-activity-content-text">
+            <p>
+              {{item.captainManifesto}}
+            </p>
+            <p>
+                <div class="cfun-samll-face-div" ng-repeat="apply in item.applys">
+                  <img src="{{apply.face}}">
+                </div>
+                <div class="cfun-activity-apply-account">{{item.applys.length}} 报名</div>
+            </p>
+            <div class="cfun-activity-comments-div">
+              <div ng-repeat="comment in item.comments" >
+                <a class="item item-avatar" ng-if="$index < 3">
+                  <img src="{{comment.face}}">
+                  <p>
+                    <span class="cfun-activity-comment-title">{{comment.name}}</span>
+                    <span class="cfun-activity-comment-content">{{comment.content}}</span>
+                  </p>
+                </a>
+              </div>
+               <p>查看全部{{item.comments.length}}条历史活动评价</p>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+
+  </ion-content>
+</ion-view>
