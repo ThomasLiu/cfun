@@ -1,0 +1,29 @@
+<ion-view view-title="活动">
+  <ion-content>
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c">
+    </ion-refresher>
+
+    <div class="card cfun-activity-card">
+    <div ng-include="'templates/include/captain_in_list.html'"></div>
+
+    <div class="item item-body">
+      <div ng-include="'templates/include/activity_base_info.html'"></div>
+
+      <div class="cfun-activity-content-text" ng-if="item.captain">
+
+        <p>
+          {{item.captain.manifesto}}
+        </p>
+        <div ng-include="'templates/include/applys.html'"></div>
+
+
+      </div>
+    </div>
+    </div>
+
+
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-assertive">
+    <button class="button button-clear button-full">立刻报名</button>
+  </ion-footer-bar>
+</ion-view>

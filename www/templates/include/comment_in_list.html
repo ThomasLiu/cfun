@@ -1,0 +1,12 @@
+<div class="cfun-activity-comments-div">
+  <div ng-repeat="comment in item.comments" >
+    <a class="item item-avatar" ng-if="$index < 3">
+      <img ng-src="{{comment.face}}">
+      <p>
+        <span class="cfun-activity-comment-title">{{comment.name}}</span>
+        <span class="cfun-activity-comment-content">{{comment.content}}</span>
+      </p>
+    </a>
+  </div>
+  <p ng-if="item.comments.length > 3">查看全部{{item.comments.length}}条历史活动评价</p>
+</div>

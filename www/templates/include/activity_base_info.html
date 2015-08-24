@@ -1,0 +1,35 @@
+<img class="full-image" ng-src="img/activity/{{item.img}}">
+
+<div class="img-label left" style="top: 20px;left: 10%;">
+  <div class="img-label-content">
+    <span class="arrow"></span>
+    <span class="text">{{item.time}}</span>
+  </div>
+  <i class="icon ion-record"></i>
+</div>
+
+<div class="img-label right" style="top: 35px;left: 70%;">
+  <div class="img-label-content">
+    <span class="arrow"></span>
+    <span class="text">{{item.value | currency:"¥" }}</span>
+  </div>
+  <i class="icon ion-record"></i>
+</div>
+
+<div class="img-label right" style="top: 150px;left: 70%;">
+  <div class="img-label-content">
+    <span class="arrow"></span>
+    <span class="text">{{item.activityType}}</span>
+  </div>
+  <i class="icon ion-record"></i>
+</div>
+
+<div class="img-label right" style="top: 65px;left: 70%;">
+  <div class="img-label-content">
+    <span class="arrow"></span>
+    <span class="text">{{item.area}}</span>
+  </div>
+  <i class="icon ion-location"></i>
+</div>
+
+<div class="cfun-activity-name-div">{{item.name}}</div>

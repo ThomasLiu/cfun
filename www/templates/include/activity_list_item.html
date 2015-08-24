@@ -1,0 +1,20 @@
+<div ng-include="'templates/include/captain_in_list.html'"></div>
+
+<div class="item item-body">
+  <div ng-include="'templates/include/activity_base_info.html'"></div>
+
+  <div class="cfun-activity-content-text" ng-if="item.captain">
+
+    <p>
+      {{item.captain.manifesto}}
+    </p>
+    <div class="row">
+      <div class="col cfun-apply-btn-div-in-list">
+        <a class="button button-energized button-small"
+            href="#/tab/activity/{{item.id}}">立刻报名</a>
+      </div>
+      <div class="col col-75 text-right" ng-include="'templates/include/applys.html'"></div>
+    </div>
+    <div ng-include="'templates/include/comment_in_list.html'"></div>
+  </div>
+</div>

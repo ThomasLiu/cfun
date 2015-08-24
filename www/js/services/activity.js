@@ -14,7 +14,8 @@ angular.module('starter.services')
     return {
       list: function(){
         return [{
-          name : '骑马活动'
+          id : 0
+          , name : '骑马活动'
           , time : '下周四 9:00'
           , area : '深圳 福田'
           , activityType : '极限运动'
@@ -25,8 +26,8 @@ angular.module('starter.services')
             name : '黄大锤'
             , face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
             , stats : [{item:'1'},{item:'1'},{item:'1'},{item:'1'},{item:'1'}]
+            , manifesto : 'Come on，我们一起来感受一下江南Style'
           }
-          , captainManifesto : 'Come on，我们一起来感受一下江南Style'
           , applys : [
             {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
             , {face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
@@ -52,7 +53,8 @@ angular.module('starter.services')
           ]
         }
           ,{
-            name : '极限攀崖'
+            id : 1
+            , name : '极限攀崖'
             , time : '明天 13:00'
             , area : '深圳 龙岗'
             , activityType : '极限运动'
@@ -63,8 +65,8 @@ angular.module('starter.services')
               name : 'Ben Sparrow'
               , face:'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
               , stats : [{item:'1'},{item:'1'}]
+              , manifesto : '挑战自我，登上高峰以后一齐欣赏那令人振奋的景色吧！'
             }
-            , captainManifesto : '挑战自我，登上高峰以后一齐欣赏那令人振奋的景色吧！'
             , applys : [
               {face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
               , {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
@@ -91,7 +93,8 @@ angular.module('starter.services')
             ]
           }
           ,{
-            name : '速度与激情8 之 卡丁车大战'
+            id : 2
+            , name : '速度与激情8 之 卡丁车大战'
             , time : '9月4号 9:00'
             , area : '深圳 南山'
             , activityType : '极限运动'
@@ -102,8 +105,9 @@ angular.module('starter.services')
               name : 'Ben Sparrow'
               , face:'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
               , stats : [{item:'1'},{item:'1'},{item:'1'},{item:'1'}]
+              , manifesto : '一起来狂漂吧！'
             }
-            , captainManifesto : '一起来狂漂吧！'
+
             , applys : [
               {face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
               , {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}

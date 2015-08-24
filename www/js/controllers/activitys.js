@@ -10,14 +10,10 @@
 
 angular.module('starter.controllers')
 
-  .controller('ActivityCtrl', function($scope
+  .controller('ActivitysCtrl', function($scope
     , $log
-    , $stateParams
     , Activity) {
-    var id = $stateParams.id;
-    $log.log('Activity Ctrl id = ' + id);
+    $log.log('Activitys Ctrl');
 
-
-
-    $scope.item = Activity.list()[id];
+    $scope.activityLists = Activity.list();
   });

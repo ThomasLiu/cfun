@@ -44,11 +44,20 @@ angular.module('starter', ['ionic'
   // Each tab has its own nav history stack:
 
     // activity start ---------------------------------------
-    .state('tab.activity', {
-      url: '/activity',
+    .state('tab.activitys', {
+      url: '/activitys',
       views: {
         'tab-activity': {
           templateUrl: 'templates/activity/index.html',
+          controller: 'ActivitysCtrl'
+        }
+      }
+    })
+    .state('tab.activity', {
+      url: '/activity/:id',
+      views: {
+        'tab-activity': {
+          templateUrl: 'templates/activity/view.html',
           controller: 'ActivityCtrl'
         }
       }
@@ -91,7 +100,7 @@ angular.module('starter', ['ionic'
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/activity');
+  $urlRouterProvider.otherwise('/tab/activitys');
 
 });
 
