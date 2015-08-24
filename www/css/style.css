@@ -1,186 +1,161 @@
-/* Empty. Add your own CSS if you like */
+@charset "UTF-8";
+.scroll {
+  background-color: #f3f3f3; }
 
-.scroll{
-  background-color: #f3f3f3;
-}
+/**
+ * activity
+ * --------------------------------------------------
+ */
+.card.cfun-activity-card {
+  box-shadow: none;
+  margin: 12px 0; }
+  .card.cfun-activity-card > .item-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
 
-.card.cfun-activity-card{
-    box-shadow: none;
-    margin: 12px 0;
-}
-.item-avatar.cfun-activity-card-title{
-    min-height: 35px;
-    padding: 7px 0 7px 55px;
-    font-size: 12px;
-    line-height: 14px;
-}
-.item-avatar.cfun-activity-card-title img{
+.item-avatar.cfun-activity-card-title {
+  min-height: 35px;
+  padding: 7px 0 7px 55px;
+  font-size: 12px;
+  line-height: 14px; }
+  .item-avatar.cfun-activity-card-title img {
     border-radius: 0;
     width: 30px;
     height: 30px;
-    top: 7px;
-}
-.cfun-activity-content-text{
-    padding: 0 16px;
-}
-.item-avatar.cfun-activity-card-title h2{
+    top: 7px; }
+  .item-avatar.cfun-activity-card-title h2 {
     font-size: 12px;
-    line-height: 14px;
-}
-.card.cfun-activity-card > .item-body{
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
+    line-height: 14px; }
 
-.cfun-samll-face-div{
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    margin-right: 3px;
-}
-.cfun-samll-face-div img{
-    width: 100%;
-}
-.cfun-activity-apply-account{
-    color: #999999;
-    display: inline-block;
-    font-size: 12px;
-    height: 22px;
-    vertical-align: super;
-}
-.cfun-activity-comments-div .item-avatar > img:first-child{
+.cfun-activity-content-text {
+  padding: 0 16px; }
+
+.cfun-samll-face-div {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 3px; }
+  .cfun-samll-face-div img {
+    width: 100%; }
+
+.cfun-activity-apply-account {
+  color: #999999;
+  display: inline-block;
+  font-size: 12px;
+  height: 22px;
+  vertical-align: super; }
+
+.cfun-activity-comments-div .item-avatar {
+  padding: 0px 30px;
+  min-height: 32px; }
+  .cfun-activity-comments-div .item-avatar > img:first-child {
     border-radius: 0;
     width: 24px;
     height: 24px;
     top: 3px;
-    left: 0px;
-}
-.cfun-activity-comments-div .item-avatar{
-    padding: 0px 30px;
-    min-height: 32px;
-}
-.cfun-activity-comments-div .item{
-    font-size: 12px;
-}
-.cfun-activity-comments-div .item p{
+    left: 0px; }
+.cfun-activity-comments-div .item {
+  font-size: 12px; }
+  .cfun-activity-comments-div .item p {
     margin: 0;
     font-size: 12px;
     line-height: 14px;
     color: #999999;
     vertical-align: baseline;
-    padding-top: 2px;
-}
-.cfun-activity-comments-div .item .cfun-activity-comment-title{
+    padding-top: 2px; }
+  .cfun-activity-comments-div .item .cfun-activity-comment-title {
     color: #333333;
     font-weight: bold;
-    margin-right: 5px;
-}
-.cfun-activity-comments-div .item .cfun-activity-comment-title:after{
+    margin-right: 5px; }
+  .cfun-activity-comments-div .item .cfun-activity-comment-title:after {
     content: ':';
-    padding-left: 5px;
-}
-.cfun-activity-card{
-    position: relative;
-}
-.img-label{
-    font-size: 10px;
-    position: absolute;
-}
-.img-label .icon{
-    color: #ffffff;
-    position: absolute;
-    font-size: 20px;
-    top: 3px;
-}
-.img-label .icon.ion-record{
-  font-size: 12px;
-  top: 2px;
-}
-.cfun-activity-card .text{
+    padding-left: 5px; }
+
+.cfun-activity-card {
+  position: relative; }
+  .cfun-activity-card .text {
     display: inline-block;
     padding: 2px 8px;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.6) !important; /* IE无效，FF有效 */
-}
-.img-label-content{
-    display: inline-block;
-}
+    background: rgba(0, 0, 0, 0.6) !important;
+    /* IE无效，FF有效 */ }
 
-
-.img-label-content > .arrow, .img-label-content > .arrow::after {
-  border-color: transparent;
-  border-style: solid;
-  display: block;
-  height: 0;
+.img-label {
+  font-size: 10px;
   position: absolute;
-  width: 0;
-}
-.img-label-content > .arrow {
-  border-width: 11px;
-}
-.img-label-content > .arrow::after {
-  border-width: 10px;
-  content: "";
-}
+  z-index: 1; }
+  .img-label .icon {
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 3px; }
+  .img-label .icon.ion-record {
+    font-size: 12px;
+    top: 2px; }
+
+.img-label-content {
+  display: inline-block; }
+  .img-label-content > .arrow, .img-label-content .img-label-content > .arrow::after {
+    border-color: transparent;
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0; }
+  .img-label-content > .arrow {
+    border-width: 11px; }
+  .img-label-content > .arrow::after {
+    border-width: 10px;
+    content: ""; }
 
 .img-label.right .img-label-content > .arrow {
   border-left-width: 0;
   border-right-color: rgba(0, 0, 0, 0.25);
   left: -11px;
   margin-top: -11px;
-  top: 50%;
-}
+  top: 50%; }
 .img-label.right .img-label-content > .arrow::after {
   border-left-width: 0;
   border-right-color: #000;
   bottom: -10px;
   content: " ";
   left: 1px;
-  opacity: 0.45;
-}
-.img-label.right .text{
+  opacity: 0.45; }
+.img-label.right .text {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-}
-.img-label.right .icon{
-  left: -23px;
-}
+  border-top-left-radius: 2px; }
+.img-label.right .icon {
+  left: -23px; }
 
 .img-label.left .img-label-content > .arrow {
   border-left-color: rgba(0, 0, 0, 0.25);
   border-right-width: 0;
   margin-top: -11px;
   right: -11px;
-  top: 50%;
-}
-
+  top: 50%; }
 .img-label.left .img-label-content > .arrow::after {
   border-left-color: #000;
   border-right-width: 0;
   bottom: -10px;
   content: " ";
   right: 1px;
-  opacity: 0.45;
-}
-.img-label.left .text{
+  opacity: 0.45; }
+.img-label.left .text {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-}
-.img-label.left .icon{
-  right: -20px;
-}
+  border-top-right-radius: 2px; }
+.img-label.left .icon {
+  right: -20px; }
 
-.cfun-activity-name-div{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 20%, #000000 100%);
+.cfun-activity-name-div {
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 20%, #000000 100%);
   color: #fff;
   position: relative;
   top: -50px;
   margin-bottom: -50px;
   padding: 10px 16px;
-  height: 45px;
-}
+  height: 45px; }

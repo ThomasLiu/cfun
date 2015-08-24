@@ -1,0 +1,192 @@
+/**
+ * activity
+ * --------------------------------------------------
+ */
+
+
+
+.card.cfun-activity-card{
+  box-shadow: none;
+  margin: 12px 0;
+  > .item-body{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.item-avatar.cfun-activity-card-title{
+  min-height: 35px;
+  padding: 7px 0 7px 55px;
+  font-size: $baseFontSize;
+  line-height: 14px;
+  img{
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    top: 7px;
+  }
+  h2{
+    font-size: $baseFontSize;
+    line-height: 14px;
+  }
+}
+.cfun-activity-content-text{
+  padding: 0 16px;
+}
+.cfun-samll-face-div{
+  width: $samllIconSize;
+  height: $samllIconSize;
+  display: inline-block;
+  margin-right: 3px;
+  img{
+    width: 100%;
+  }
+}
+.cfun-activity-apply-account{
+  color: #999999;
+  display: inline-block;
+  font-size: $baseFontSize;
+  height: 22px;
+  vertical-align: super;
+}
+
+.cfun-activity-comments-div{
+  .item-avatar{
+    padding: 0px 30px;
+    min-height: 32px;
+    > img:first-child{
+      border-radius: 0;
+      width: $samllIconSize;
+      height: $samllIconSize;
+      top: 3px;
+      left: 0px;
+    }
+  }
+  .item{
+    font-size: $baseFontSize;
+    p{
+      margin: 0;
+      font-size: $baseFontSize;
+      line-height: 14px;
+      color: #999999;
+      vertical-align: baseline;
+      padding-top: 2px;
+    }
+    .cfun-activity-comment-title{
+      color: #333333;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .cfun-activity-comment-title:after{
+      content: ':';
+      padding-left: 5px;
+    }
+  }
+}
+.cfun-activity-card{
+  position: relative;
+  .text{
+    display: inline-block;
+    padding: 2px 8px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6) !important; /* IE无效，FF有效 */
+  }
+}
+.img-label{
+  font-size: 10px;
+  position: absolute;
+  z-index: 1;
+  .icon{
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+  }
+  .icon.ion-record{
+    font-size: $baseFontSize;
+    top: 2px;
+  }
+}
+.img-label-content{
+  display: inline-block;
+  > .arrow, .img-label-content > .arrow::after {
+    border-color: transparent;
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+  }
+  > .arrow {
+    border-width: 11px;
+  }
+  > .arrow::after {
+    border-width: 10px;
+    content: "";
+  }
+}
+.img-label.right{
+  .img-label-content{
+    > .arrow{
+      border-left-width: 0;
+      border-right-color: rgba(0, 0, 0, 0.25);
+      left: -11px;
+      margin-top: -11px;
+      top: 50%;
+    }
+    > .arrow::after {
+      border-left-width: 0;
+      border-right-color: #000;
+      bottom: -10px;
+      content: " ";
+      left: 1px;
+      opacity: 0.45;
+    }
+  }
+  .text{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+  .icon{
+    left: -23px;
+  }
+}
+.img-label.left{
+  .img-label-content{
+    > .arrow {
+      border-left-color: rgba(0, 0, 0, 0.25);
+      border-right-width: 0;
+      margin-top: -11px;
+      right: -11px;
+      top: 50%;
+    }
+    > .arrow::after {
+      border-left-color: #000;
+      border-right-width: 0;
+      bottom: -10px;
+      content: " ";
+      right: 1px;
+      opacity: 0.45;
+    }
+  }
+  .text{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  .icon{
+    right: -20px;
+  }
+}
+.cfun-activity-name-div{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 20%, #000000 100%);
+  color: #fff;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  padding: 10px 16px;
+  height: 45px;
+}
