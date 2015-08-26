@@ -47,7 +47,7 @@
   vertical-align: super; }
 
 .cfun-activity-comments-div .item-avatar {
-  padding: 0px 30px;
+  padding: 0 0 0 30px;
   min-height: 32px; }
   .cfun-activity-comments-div .item-avatar > img:first-child {
     border-radius: 0;
