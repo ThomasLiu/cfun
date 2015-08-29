@@ -11,10 +11,10 @@
 angular.module('starter.controllers')
 
 
-  .controller('MyCtrl', function($scope
+  .controller('EditCtrl', function($scope
     , $log
     , User) {
-    $log.log('My Ctrl');
+    $log.log('Edit Ctrl');
 
 
     $scope.user = User.getById();

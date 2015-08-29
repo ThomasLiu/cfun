@@ -6,8 +6,13 @@
 
 $samllIconSize : 24px;
 $baseFontSize : 12px;
+$userInfoFaceSize : 54px;
+$userInfoActivitySize : 44px;
+$userInfoGrayColor : #b2b2b2;
+$userInfoNumGrayColor : #F0F0F0;
 
-@import "../scss/activity/list";
+@import "../scss/activity/list"
+  ,"../scss/my/user_info";
 
 
 

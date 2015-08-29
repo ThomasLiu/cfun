@@ -91,6 +91,15 @@ angular.module('starter', ['ionic'
         }
       }
     })
+    .state('tab.edit', {
+      url: '/edit',
+      views: {
+        'tab-my': {
+          templateUrl: 'templates/my/edit.html',
+          controller: 'EditCtrl'
+        }
+      }
+    })
 
     // my end ---------------------------------------
 

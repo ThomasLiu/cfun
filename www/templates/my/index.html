@@ -1,11 +1,70 @@
-<ion-view view-title="我的信息">
-  <ion-content class="padding">
-    <ion-refresher
-      pulling-text="Pull to refresh..."
-      on-refresh="doRefresh()">
-    </ion-refresher>
-    <ion-list>
-      <ion-item ng-repeat="item in items"></ion-item>
-    </ion-list>
+<ion-view view-title="我">
+  <ion-nav-buttons side="right">
+    <a class="button button-clear" href="#/tab/edit">编辑</a>
+  </ion-nav-buttons>
+  <ion-content class="cfun-user-info-content">
+
+    <div class="list">
+
+      <div class="item">
+        印象墙
+
+      </div>
+      <div class="item item-avatar cfun-my-fase-div">
+        <img ng-src="{{user.face}}">
+        <h2>{{user.name}}</h2>
+        <p><i class="icon ion-star" ng-repeat="stats in user.stats"></i> <a >组织过{{user.captainTimes}}场</a></p>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+
+      <div class="item tabs">
+        <a class="tab-item">
+          <i class="icon">{{user.attentionUsers.length}}</i>
+          关注
+        </a>
+        <a class="tab-item">
+          <i class="icon">{{user.attentionUsers.length}}</i>
+          好友
+        </a>
+        <a class="tab-item">
+          <i class="icon">{{user.kaCurrency}}</i>
+          咖币
+        </a>
+      </div>
+
+      <div class="item row cfun-my-activitys-div">
+        <div class="col"><span class="cfun-my-property-title">活动历程</span><br><span class="num">{{user.activitys.length}}</span></div>
+        <div class="col col-75">
+          <div class="cfun-my-activity-div" ng-repeat="activity in user.activitys">
+            <img ng-src="img/activity/{{activity.img}}">
+          </div>
+          <i class="icon ion-chevron-right"></i>
+        </div>
+      </div>
+      <div class="item row">
+        <div class="col"><span class="cfun-my-property-title">个性签名</span></div>
+        <div class="col col-75">{{user.signature}}</div>
+      </div>
+      <div class="item row cfun-my-interests-div">
+        <div class="col"><span class="cfun-my-property-title">兴趣类别</span></div>
+        <div class="col col-75 ">
+          <ul>
+            <li ng-repeat="interest in user.interests">{{interest.name}}</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="item row">
+          <div class="col"><span class="cfun-my-property-title">职业</span></div>
+          <div class="col col-75">{{user.postType}}</div>
+      </div>
+      <div class="item row">
+        <div class="col"><span class="cfun-my-property-title">地区</span></div>
+        <div class="col col-75">{{user.area}}</div>
+      </div>
+
+
+
+    </div>
   </ion-content>
 </ion-view>

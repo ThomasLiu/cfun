@@ -3,7 +3,7 @@
   background-color: #f3f3f3; }
 
 /**
- * activity
+ * activity - list
  * --------------------------------------------------
  */
 .card.cfun-activity-card {
@@ -165,3 +165,85 @@
   min-height: 27px;
   padding: 0 4px;
   margin: -2px 0 0 -10px; }
+
+/**
+ * my - user_info
+ * --------------------------------------------------
+ */
+.cfun-user-info-content .item-avatar.cfun-my-fase-div {
+  padding: 16px 16px 16px 80px; }
+  .cfun-user-info-content .item-avatar.cfun-my-fase-div img {
+    top: 8px;
+    border-radius: 0;
+    width: 54px;
+    height: 54px;
+    max-height: 54px;
+    max-width: 54px; }
+  .cfun-user-info-content .item-avatar.cfun-my-fase-div h2 {
+    margin-bottom: 8px; }
+  .cfun-user-info-content .item-avatar.cfun-my-fase-div p {
+    color: #b2b2b2;
+    font-size: 12px; }
+.cfun-user-info-content .item {
+  margin: 0 0 1px 0;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px; }
+  .cfun-user-info-content .item .cfun-my-property-title {
+    color: #b2b2b2;
+    padding-left: 3px; }
+  .cfun-user-info-content .item .icon.ion-chevron-right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    font-size: 16px;
+    right: 11px;
+    color: #F0F0F0; }
+  .cfun-user-info-content .item .num {
+    color: #F0F0F0; }
+.cfun-user-info-content .item.tabs {
+  margin-bottom: 10px;
+  height: 80px; }
+  .cfun-user-info-content .item.tabs .tab-item {
+    color: #b2b2b2;
+    font-size: 12px; }
+    .cfun-user-info-content .item.tabs .tab-item i.icon {
+      font-size: 20px;
+      height: 20px;
+      color: #444444; }
+.cfun-user-info-content .cfun-my-interests-div ul li {
+  display: inline-block; }
+.cfun-user-info-content .cfun-my-interests-div ul li:not(:first-child) {
+  margin-left: 6px; }
+.cfun-user-info-content .cfun-my-interests-div ul li:not(:first-child):before {
+  content: '、'; }
+.cfun-user-info-content .cfun-my-activitys-div .num {
+  font-size: 25px;
+  line-height: 28px;
+  padding-left: 3px; }
+.cfun-user-info-content .cfun-my-activitys-div .cfun-my-activity-div {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px; }
+  .cfun-user-info-content .cfun-my-activitys-div .cfun-my-activity-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+
+.cfun-user-edit-content .item.item-toggle {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+.cfun-user-edit-content .cfun-user-edit-face-div img {
+  width: 100%; }
