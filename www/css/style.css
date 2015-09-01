@@ -2,6 +2,9 @@
 .scroll {
   background-color: #f3f3f3; }
 
+a {
+  text-decoration: none; }
+
 /**
  * activity - list
  * --------------------------------------------------
@@ -222,6 +225,8 @@
       font-size: 20px;
       height: 20px;
       color: #444444; }
+  .cfun-user-info-content .item.tabs .tab-item:not(:first-child) {
+    border-left: #F0F0F0 solid 1px; }
 .cfun-user-info-content .cfun-my-interests-div ul li {
   display: inline-block; }
 .cfun-user-info-content .cfun-my-interests-div ul li:not(:first-child) {
@@ -247,3 +252,22 @@
   padding-bottom: 16px; }
 .cfun-user-edit-content .cfun-user-edit-face-div img {
   width: 100%; }
+
+/**
+ * his_activity - info
+ * --------------------------------------------------
+ */
+.cfun-his-acitivity-info .cfun-his-acitivity-role-div img {
+  width: 24px;
+  height: 24px; }
+.cfun-his-acitivity-info .cfun-his-acitivity-role-div a span {
+  vertical-align: super; }
+
+.cfun-his-acitivity-article-div .cfun-his-acitivity-img {
+  width: 100%; }
+
+.cfun-his-acitivity-list .item-icon-right .icon {
+  font-size: 15px; }
+
+.cfun-his-acitivity-list .scroll, .cfun-his-acitivity-info .scroll {
+  background-color: #ffffff; }

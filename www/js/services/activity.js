@@ -22,6 +22,7 @@ angular.module('starter.services')
           , value : '50'
           , img : '1.jpg'
           , maxApply : 10
+          , info : '关于攀岩流传着一个美丽的传说，在古老的欧洲阿尔卑斯山区悬崖峭壁的绝顶上，生长着一种珍奇的高山玫瑰。相传只要拥有这种玫瑰，就能获得美满的爱情。于是，勇敢的小伙子便争相攀岩，摘取花朵献给心爱的人...自此以后攀岩赋予了勇敢的心灵、坚定顽强的信念、坚韧温情的舞者的美称！'
           , captain : {
             name : '黄大锤'
             , face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
@@ -29,9 +30,9 @@ angular.module('starter.services')
             , manifesto : 'Come on，我们一起来感受一下江南Style'
           }
           , applys : [
-            {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
-            , {face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
-            , {face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
+            {id: 0,face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
+            , {id: 1,face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
+            , {id: 2,face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
           ]
           , comments : [
             {
@@ -61,6 +62,7 @@ angular.module('starter.services')
             , value : '0'
             , img : '2.jpg'
             , maxApply : 5
+            , info : '关于攀岩流传着一个美丽的传说，在古老的欧洲阿尔卑斯山区悬崖峭壁的绝顶上，生长着一种珍奇的高山玫瑰。相传只要拥有这种玫瑰，就能获得美满的爱情。于是，勇敢的小伙子便争相攀岩，摘取花朵献给心爱的人...自此以后攀岩赋予了勇敢的心灵、坚定顽强的信念、坚韧温情的舞者的美称！'
             , captain : {
               name : 'Ben Sparrow'
               , face:'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
@@ -68,9 +70,9 @@ angular.module('starter.services')
               , manifesto : '挑战自我，登上高峰以后一齐欣赏那令人振奋的景色吧！'
             }
             , applys : [
-              {face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
-              , {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
-              , {face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
+              {id: 1,face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
+              , {id: 2,face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
+              , {id: 3,face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
             ]
             , comments : [
               {
@@ -101,6 +103,7 @@ angular.module('starter.services')
             , value : '150'
             , img : '3.jpg'
             , maxApply : 20
+            , info : '关于攀岩流传着一个美丽的传说，在古老的欧洲阿尔卑斯山区悬崖峭壁的绝顶上，生长着一种珍奇的高山玫瑰。相传只要拥有这种玫瑰，就能获得美满的爱情。于是，勇敢的小伙子便争相攀岩，摘取花朵献给心爱的人...自此以后攀岩赋予了勇敢的心灵、坚定顽强的信念、坚韧温情的舞者的美称！'
             , captain : {
               name : 'Ben Sparrow'
               , face:'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
@@ -109,9 +112,9 @@ angular.module('starter.services')
             }
 
             , applys : [
-              {face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
-              , {face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
-              , {face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
+              {id: 0,face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
+              , {id: 3,face:'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'}
+              , {id: 2,face:'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'}
             ]
             , comments : [
               {

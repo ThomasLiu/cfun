@@ -1,7 +1,8 @@
 
-
-<div class="cfun-samll-face-div" ng-repeat="apply in item.applys">
+<a href="#/tab/my/{{apply.id}}" ng-repeat="apply in item.applys">
+<div class="cfun-samll-face-div" >
   <img ng-src="{{apply.face}}">
 </div>
+</a>
 <div class="cfun-activity-apply-account">{{item.applys.length}} 报名</div>
 

@@ -15,4 +15,9 @@ angular.module('starter.controllers')
     , $log) {
     $log.log('Msg Ctrl');
 
+    $scope.msＭap = [
+      {}
+    ];
+
+
   });

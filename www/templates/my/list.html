@@ -1,0 +1,19 @@
+<ion-view view-title="关注">
+
+
+  <ion-content class="cfun-user-info-content">
+
+    <div class="list">
+      <a class="item item-avatar" href="#/tab/my/{{user.id}}" ng-repeat="user in users">
+        <img ng-src="{{user.face}}">
+        <h2>{{user.name}}</h2>
+        <div class="cfun-my-interests-div">
+          <ul>
+            <li ng-repeat="interest in user.interests">{{interest.name}}</li>
+
+          </ul>
+        </div>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

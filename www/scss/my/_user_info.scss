@@ -68,6 +68,9 @@
         color: #444444;
       }
     }
+    .tab-item:not(:first-child){
+      border-left: $userInfoNumGrayColor solid 1px;
+    }
   }
   .cfun-my-interests-div{
     ul{

@@ -1,0 +1,65 @@
+<ion-view view-title="活动列表">
+  <ion-content class="padding cfun-his-acitivity-info">
+    <h3>{{hisActivity.title}}</h3>
+    <h5>{{hisActivity.time}}</h5>
+
+    <hr>
+
+    <div class="cfun-his-acitivity-article-div">
+      <img class="cfun-his-acitivity-img" ng-src="img/his_activity/{{hisActivity.imgs[0].url}}">
+      <img class="cfun-his-acitivity-img" ng-src="img/his_activity/{{hisActivity.imgs[1].url}}">
+      <p>{{hisActivity.article}}</p>
+      <img class="cfun-his-acitivity-img" ng-src="img/his_activity/{{hisActivity.imgs[2].url}}">
+      <img class="cfun-his-acitivity-img" ng-src="img/his_activity/{{hisActivity.imgs[3].url}}">
+      <img class="cfun-his-acitivity-img" ng-src="img/his_activity/{{hisActivity.imgs[4].url}}">
+    </div>
+
+    <hr>
+
+    <div class="cfun-his-acitivity-role-div">
+    <div class="row">
+      <div class="col">
+        <span>文章提供:</span>
+      </div>
+      <div class="col col-75">
+        <a href="#/tab/my/{{hisActivity.articleFor.id}}">
+          <img src="{{hisActivity.articleFor.face}}">
+          <span>{{hisActivity.articleFor.name}}</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>照骗提供:</span>
+      </div>
+      <div class="col col-75">
+        <a href="#/tab/my/{{hisActivity.photoFor.id}}">
+          <img src="{{hisActivity.photoFor.face}}">
+          <span>{{hisActivity.photoFor.name}}</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <span>活动队长:</span>
+      </div>
+      <div class="col col-75">
+        <a href="#/tab/my/{{hisActivity.captain.id}}">
+          <img src="{{hisActivity.captain.face}}">
+          <span>{{hisActivity.captain.name}}</span>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <h5 class="positive">其他参与者</h5>
+    <div>
+      <a href="#/tab/my/{{apply.id}}" ng-repeat="apply in hisActivity.applys">
+        <div class="cfun-samll-face-div" >
+          <img ng-src="{{apply.face}}">
+        </div>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>

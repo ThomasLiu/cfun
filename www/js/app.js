@@ -10,7 +10,9 @@ angular.module('starter', ['ionic'
   , 'starter.services'
   , 'starter.config'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform
+    , Push
+    , User) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -18,6 +20,11 @@ angular.module('starter', ['ionic'
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
 
+    }
+
+    var currentUser = User.getCurrentUser();
+    if (currentUser.id) {
+      Push.setAlias(currentUser.id);
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
@@ -83,7 +90,7 @@ angular.module('starter', ['ionic'
 
     // my start ---------------------------------------
     .state('tab.my', {
-      url: '/my',
+      url: '/my/:id',
       views: {
         'tab-my': {
           templateUrl: 'templates/my/index.html',
@@ -100,7 +107,33 @@ angular.module('starter', ['ionic'
         }
       }
     })
-
+    .state('tab.users', {
+      url: '/users/:id',
+      views: {
+        'tab-my': {
+          templateUrl: 'templates/my/list.html',
+          controller: 'UsersCtrl'
+        }
+      }
+    })
+    .state('tab.hisActivitys', {
+      url: '/hisActivitys/:id',
+      views: {
+        'tab-my': {
+          templateUrl: 'templates/his_activity/list.html',
+          controller: 'HisActivitysCtrl'
+        }
+      }
+    })
+    .state('tab.hisActivity', {
+      url: '/hisActivity/:id',
+      views: {
+        'tab-my': {
+          templateUrl: 'templates/his_activity/view.html',
+          controller: 'HisActivityCtrl'
+        }
+      }
+    })
     // my end ---------------------------------------
 
 

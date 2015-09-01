@@ -17,6 +17,6 @@ angular.module('starter.controllers')
     $log.log('Edit Ctrl');
 
 
-    $scope.user = User.getById();
+    $scope.user = User.list()[User.getCurrentUser().id];
 
   });

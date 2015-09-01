@@ -4,22 +4,40 @@
     </ion-refresher>
 
     <div class="card cfun-activity-card">
-    <div ng-include="'templates/include/captain_in_list.html'"></div>
+      <div ng-include="'templates/include/captain_in_list.html'"></div>
 
-    <div class="item item-body">
-      <div ng-include="'templates/include/activity_base_info.html'"></div>
+      <div class="item item-body">
+        <div ng-include="'templates/include/activity_base_info.html'"></div>
 
-      <div class="cfun-activity-content-text" ng-if="item.captain">
+        <div class="cfun-activity-content-text" ng-if="item.captain">
 
-        <p>
-          {{item.captain.manifesto}}
-        </p>
-        <div ng-include="'templates/include/applys.html'"></div>
+          <p>
+            {{item.captain.manifesto}}
+          </p>
+          <div ng-include="'templates/include/applys.html'"></div>
 
+          <p>{{item.info}}</p>
 
+        </div>
+      </div>
+      <div class="item item-divider">
+        历史评价
+      </div>
+      <div class="item">
+        <div class="cfun-activity-comments-div">
+          <div ng-repeat="comment in item.comments" >
+            <a class="item item-avatar" href="#/tab/my/{{comment.id}}">
+              <img ng-src="{{comment.face}}">
+              <p>
+                <span class="cfun-activity-comment-title">{{comment.name}}</span>
+                <span class="cfun-activity-comment-content">{{comment.content}}</span>
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+
 
 
   </ion-content>

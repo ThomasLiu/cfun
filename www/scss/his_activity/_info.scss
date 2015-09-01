@@ -1,0 +1,38 @@
+/**
+ * his_activity - info
+ * --------------------------------------------------
+ */
+.cfun-his-acitivity-info{
+
+
+  .cfun-his-acitivity-role-div{
+    img{
+      width: $samllIconSize;
+      height: $samllIconSize;
+    }
+    a{
+      span{
+        vertical-align: super;
+      }
+    }
+  }
+}
+.cfun-his-acitivity-article-div{
+  .cfun-his-acitivity-img{
+    width: 100%;
+  }
+}
+.cfun-his-acitivity-list{
+  .item-icon-right{
+    .icon{
+      font-size: 15px;
+    }
+  }
+}
+.cfun-his-acitivity-list,
+.cfun-his-acitivity-info{
+  .scroll{
+    background-color: #ffffff;
+  }
+}
+

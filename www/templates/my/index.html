@@ -1,6 +1,6 @@
-<ion-view view-title="我">
+<ion-view view-title="{{title}}">
   <ion-nav-buttons side="right">
-    <a class="button button-clear" href="#/tab/edit">编辑</a>
+    <a class="button button-clear" href="#/tab/edit" ng-if="user.id == currentUserId">编辑</a>
   </ion-nav-buttons>
   <ion-content class="cfun-user-info-content">
 
@@ -18,21 +18,21 @@
       </div>
 
       <div class="item tabs">
-        <a class="tab-item">
+        <a class="tab-item" href="#/tab/users/{{user.id}}">
           <i class="icon">{{user.attentionUsers.length}}</i>
           关注
         </a>
-        <a class="tab-item">
+        <a class="tab-item" href="#/tab/users/{{user.id}}">
           <i class="icon">{{user.attentionUsers.length}}</i>
           好友
         </a>
-        <a class="tab-item">
+        <a class="tab-item" ng-if="user.id == currentUserId">
           <i class="icon">{{user.kaCurrency}}</i>
           咖币
         </a>
       </div>
 
-      <div class="item row cfun-my-activitys-div">
+      <a class="item row cfun-my-activitys-div" href="#/tab/hisActivitys/{{user.id}}">
         <div class="col"><span class="cfun-my-property-title">活动历程</span><br><span class="num">{{user.activitys.length}}</span></div>
         <div class="col col-75">
           <div class="cfun-my-activity-div" ng-repeat="activity in user.activitys">
@@ -40,7 +40,7 @@
           </div>
           <i class="icon ion-chevron-right"></i>
         </div>
-      </div>
+      </a>
       <div class="item row">
         <div class="col"><span class="cfun-my-property-title">个性签名</span></div>
         <div class="col col-75">{{user.signature}}</div>

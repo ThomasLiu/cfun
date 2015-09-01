@@ -3,6 +3,9 @@
 .scroll{
   background-color: #f3f3f3;
 }
+a{
+  text-decoration: none;
+}
 
 $samllIconSize : 24px;
 $baseFontSize : 12px;
@@ -12,7 +15,8 @@ $userInfoGrayColor : #b2b2b2;
 $userInfoNumGrayColor : #F0F0F0;
 
 @import "../scss/activity/list"
-  ,"../scss/my/user_info";
+  ,"../scss/my/user_info"
+  ,"../scss/his_activity/info";
 
 
 
