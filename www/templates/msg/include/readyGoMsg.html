@@ -1,0 +1,56 @@
+<h2 class="cfun-msg-list-show-more-div">你报名的《{{item.activity.name}}》正式开玩咯</h2>
+<p>{{item.activity.area}}</p>
+<p>{{item.activity.time}}</p>
+
+<hr>
+<h3>小队长</h3>
+<div class="lsit cfun-msg-list-user-list-div">
+  <div class="item item-icon-right">
+    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{item.activity.captain.id}}">
+      <img src="{{item.activity.captain.face}}">
+      <span>{{item.activity.captain.name}}</span>
+    </a>
+    <i class="icon ion-ios-telephone-outline"></i>
+  </div>
+</div>
+<p class="cfun-msg-list-show-more-div positive">{{item.activity.captain.remark}}</p>
+
+<hr>
+
+<h3>其他参与者 ({{item.activity.applys.length}})</h3>
+<div>
+  <a href="#/tab/my/{{apply.id}}" ng-repeat="apply in item.activity.applys">
+    <div class="cfun-samll-face-div" >
+      <img ng-src="{{apply.face}}">
+    </div>
+  </a>
+</div>
+<hr>
+
+<div class="cfun-his-acitivity-role-div">
+  <p class="cfun-msg-list-btns-div">
+    <a href="#/tab/my/{{item.activity.articleFor.id}}">
+      <img src="{{item.activity.articleFor.face}}">
+      <span>{{item.activity.articleFor.name}}</span>
+    </a>
+    <span class="pull-right">御用写手</span>
+  </p>
+  <p class="cfun-msg-list-btns-div">
+    <a href="#/tab/my/{{item.activity.photoFor.id}}">
+      <img src="{{item.activity.photoFor.face}}">
+      <span>{{item.activity.photoFor.name}}</span>
+    </a>
+    <span class="pull-right">御用摄影师</span>
+  </p>
+</div>
+
+
+<p class="cfun-msg-list-show-more-div">恭喜你成为本次活动的摄影师／写手，关注意事项，提示活动后会有活动照上传任务，上传的图片给各个用户评分平均分到 多小个星可以得到多小个咖币回馈</p>
+
+
+<div class="cfun-msg-list-btns-div">
+
+  <button class="button button-outline button-block button-positive button-small">
+    通知小队长已了解情况
+  </button>
+</div>

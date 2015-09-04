@@ -31,6 +31,7 @@ angular.module('starter.services')
             , captainTimes : 20
             , postType : '攻城狮'
             , area : '深圳 福田'
+            , mobile : 1300000000
             , interests : [{name:'极限运动'} ]
             , impressions : [{name:'高富帅',times:10}
             , {name:'高冷',times:16}
@@ -90,6 +91,7 @@ angular.module('starter.services')
             , captainTimes : 20
             , postType : '攻城狮'
             , area : '深圳 福田'
+            , mobile : 1300000000
             , interests : [{name:'极限运动'} , {name:'智力烧脑'}]
             , impressions : [{name:'高富帅',times:10}
               , {name:'高冷',times:16}
@@ -159,6 +161,7 @@ angular.module('starter.services')
             , captainTimes : 20
             , postType : '攻城狮'
             , area : '深圳 福田'
+            , mobile : 1300000000
             , interests : [{name:'极限运动'} , {name:'人文艺术'} , {name:'智力烧脑'}]
             , impressions : [{name:'高富帅',times:10}
               , {name:'高冷',times:16}
@@ -225,6 +228,7 @@ angular.module('starter.services')
             , captainTimes : 20
             , postType : '攻城狮'
             , area : '深圳 福田'
+            , mobile : 1300000000
             , interests : [ {name:'智力烧脑'}]
             , impressions : [{name:'高富帅',times:10}
               , {name:'高冷',times:16}

@@ -1,0 +1,26 @@
+<ion-view view-title="消息列表">
+  <ion-content class="cfun-msg-list-div">
+
+
+
+    <div class="list">
+      <div class="item item-divider">
+        未读消息
+      </div>
+      <div class="item" ng-repeat="item in messagesList.noReadMsgs"
+          ng-include="'templates/msg/include/' + item.type + '.html'"></div>
+
+
+      <div class="item item-divider">
+        已读消息
+      </div>
+      <div class="item" ng-repeat="item in messagesList.readedMsgs">
+        <div class="card">
+          <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

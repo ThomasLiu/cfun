@@ -1,0 +1,21 @@
+<h2>招募队长：{{item.activity.name}}</h2>
+<p>{{item.activity.area}}</p>
+<p>费用：{{item.activity.value | currency:"¥"}} ｜ 人数最多：{{item.activity.maxApply}}</p>
+<p class="cfun-msg-list-show-more-div">{{item.activity.time}}
+  <a class="cfun-msg-list-show-more positive"
+     ng-show="!item.showMore"
+     ng-click="item.showMore = !item.showMore">显示详细</a></p>
+<p class="cfun-msg-list-more-info" ng-show="item.showMore" >{{item.activity.info}} <a class="positive"
+                                                                             ng-show="item.showMore"
+                                                                             ng-click="item.showMore = !item.showMore">隐藏详细</a></p>
+<label class="item-input">
+  <textarea placeholder="申请请填写小队长活动宣言"></textarea>
+</label>
+<div class="cfun-msg-list-btns-div">
+  <button class="button button-outline button-assertive button-small">
+    拒绝招募
+  </button>
+  <button class="button button-outline button-positive button-small pull-right">
+    申请小队长 {{item.activity.endTime}} 截止申请
+  </button>
+</div>

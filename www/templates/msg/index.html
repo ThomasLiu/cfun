@@ -1,5 +1,15 @@
 <ion-view view-title="消息列表">
-  <ion-content class="padding">
-    消息列表
+  <ion-content >
+    <div class="list">
+      <a class="item" href="#/tab/msgList/recruitMsg">
+        小队长招募
+          <span class="badge badge-assertive">{{messages.recruitMsg.noReadMsgs.length}}</span>
+      </a>
+      <a class="item" href="#/tab/msgList/activityMsg">
+        活动消息
+        <span class="badge badge-assertive">{{messages.activityMsg.noReadMsgs.length}}</span>
+      </a>
+
+    </div>
   </ion-content>
 </ion-view>

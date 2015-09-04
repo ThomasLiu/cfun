@@ -5,6 +5,9 @@
 a {
   text-decoration: none; }
 
+.font-size-12px {
+  font-size: 12px; }
+
 /**
  * activity - list
  * --------------------------------------------------
@@ -257,10 +260,10 @@ a {
  * his_activity - info
  * --------------------------------------------------
  */
-.cfun-his-acitivity-info .cfun-his-acitivity-role-div img {
+.cfun-his-acitivity-role-div img {
   width: 24px;
   height: 24px; }
-.cfun-his-acitivity-info .cfun-his-acitivity-role-div a span {
+.cfun-his-acitivity-role-div a span {
   vertical-align: super; }
 
 .cfun-his-acitivity-article-div .cfun-his-acitivity-img {
@@ -271,3 +274,46 @@ a {
 
 .cfun-his-acitivity-list .scroll, .cfun-his-acitivity-info .scroll {
   background-color: #ffffff; }
+
+/**
+ * msg- info
+ * --------------------------------------------------
+ */
+.cfun-msg-list-div hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  margin: 25px 0; }
+.cfun-msg-list-div .cfun-msg-list-user-list-div .item {
+  border: none; }
+.cfun-msg-list-div .positive {
+  color: #387ef5; }
+.cfun-msg-list-div .item .cfun-msg-list-more-info, .cfun-msg-list-div .item .cfun-msg-list-show-more-div, .cfun-msg-list-div .item .cfun-msg-list-btns-div {
+  white-space: normal; }
+.cfun-msg-list-div .item .cfun-msg-list-show-more, .cfun-msg-list-div .item .cfun-msg-list-btns-div .pull-right {
+  float: right; }
+.cfun-msg-list-div .item .item-avatar.cfun-item-avatar-small {
+  padding-left: 49px; }
+  .cfun-msg-list-div .item .item-avatar.cfun-item-avatar-small img {
+    top: 5px;
+    border-radius: 5px; }
+.cfun-msg-list-div .cfun-msg-list-add-photo .col {
+  text-align: center;
+  vertical-align: middle;
+  height: 54px;
+  width: 54px;
+  max-width: 54px;
+  max-height: 54px; }
+  .cfun-msg-list-div .cfun-msg-list-add-photo .col img {
+    width: 100%;
+    height: 100%; }
+  .cfun-msg-list-div .cfun-msg-list-add-photo .col div {
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 1px;
+    color: #ddd;
+    height: 100%; }
+    .cfun-msg-list-div .cfun-msg-list-add-photo .col div .icon {
+      line-height: 42px; }

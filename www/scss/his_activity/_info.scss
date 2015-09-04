@@ -2,18 +2,15 @@
  * his_activity - info
  * --------------------------------------------------
  */
-.cfun-his-acitivity-info{
 
-
-  .cfun-his-acitivity-role-div{
-    img{
-      width: $samllIconSize;
-      height: $samllIconSize;
-    }
-    a{
-      span{
-        vertical-align: super;
-      }
+.cfun-his-acitivity-role-div{
+  img{
+    width: $samllIconSize;
+    height: $samllIconSize;
+  }
+  a{
+    span{
+      vertical-align: super;
     }
   }
 }

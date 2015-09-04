@@ -1,0 +1,66 @@
+<h2>通知小伙伴：{{item.activity.name}}</h2>
+<p>{{item.activity.area}}</p>
+
+<p class="cfun-msg-list-show-more-div">{{item.activity.time}}
+  <a class="cfun-msg-list-show-more positive"
+     ng-show="!item.showMore"
+     ng-click="item.showMore = !item.showMore">显示详细</a></p>
+<p class="cfun-msg-list-more-info" ng-show="item.showMore" >{{item.activity.info}} <a class="positive"
+                                                                             ng-show="item.showMore"
+<hr>                                                                             ng-click="item.showMore = !item.showMore">隐藏详细</a></p>
+<h3>参与者 ({{item.activity.applys.length}})</h3>
+<div class="lsit cfun-msg-list-user-list-div">
+  <div class="item item-icon-right" ng-repeat="user in item.activity.applys">
+    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+      <img src="{{user.face}}">
+      <span>{{user.name}} </span>
+      <span class="balanced font-size-12px" ng-if="user.isReceived">已收到</span>
+      <span class="assertive font-size-12px" ng-if="!user.isReceived">未收到</span>
+    </a>
+    <i class="icon ion-ios-telephone-outline"></i>
+  </div>
+</div>
+
+<hr>
+
+<h3>任命您的御用摄影师 ({{item.activity.applyPhotoMaker.length}}个申请)</h3>
+<div class="lsit cfun-msg-list-user-list-div">
+  <label class="item item-radio" ng-repeat="user in item.activity.applyPhotoMaker">
+    <input type="radio" name="photoMaker" value="{{user.id}}" ng-checked="$first">
+    <div class="item-content">
+      <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+        <img src="{{user.face}}">
+        <span>{{user.name}}</span>
+      </a>
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<hr>
+
+<h3>任命您的御用写手 ({{item.activity.applyArticleMaker.length}}个申请)</h3>
+<div class="lsit cfun-msg-list-user-list-div">
+  <label class="item item-radio" ng-repeat="user in item.activity.applyArticleMaker">
+    <input type="radio" name="articleMaker" value="{{user.id}}" ng-checked="$first">
+    <div class="item-content">
+      <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+        <img src="{{user.face}}">
+        <span>{{user.name}}</span>
+      </a>
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+
+
+<label class="item-input">
+  <textarea placeholder="写一下您对小伙伴们的唠叨（活动前准备，集中时间等）"></textarea>
+</label>
+<div class="cfun-msg-list-btns-div">
+
+  <button class="button button-outline button-block button-positive button-small">
+    发出活动通知
+  </button>
+</div>

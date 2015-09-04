@@ -84,6 +84,15 @@ angular.module('starter', ['ionic'
         }
       }
     })
+      .state('tab.msgList', {
+        url: '/msgList/:type',
+        views: {
+          'tab-msg': {
+            templateUrl: 'templates/msg/list.html',
+            controller: 'MsgListCtrl'
+          }
+        }
+      })
 
 
     // msg end ---------------------------------------
