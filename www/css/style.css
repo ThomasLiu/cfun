@@ -279,6 +279,20 @@ a {
  * msg- info
  * --------------------------------------------------
  */
+.cfun-msg-list-div .cfun-msg-list-acitivity-img {
+  width: 100%;
+  border-top: #ddd dashed 1px;
+  padding-top: 8px; }
+.cfun-msg-list-div .cfun-msg-list-after-impression .item-input {
+  padding: 0; }
+  .cfun-msg-list-div .cfun-msg-list-after-impression .item-input .cfun-item-avatar-small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px; }
+    .cfun-msg-list-div .cfun-msg-list-after-impression .item-input .cfun-item-avatar-small img {
+      max-width: 24px;
+      max-height: 24px; }
 .cfun-msg-list-div hr {
   height: 0;
   -webkit-box-sizing: content-box;
@@ -317,3 +331,5 @@ a {
     height: 100%; }
     .cfun-msg-list-div .cfun-msg-list-add-photo .col div .icon {
       line-height: 42px; }
+.cfun-msg-list-div .cfun-activity-comments-div .item {
+  border: none; }

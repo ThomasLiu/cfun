@@ -1,0 +1,22 @@
+<h2 class="cfun-msg-list-show-more-div">咖币回馈：{{item.activity.name}}</h2>
+<p >{{item.activity.time}}</p>
+
+<hr>
+
+<p class="cfun-msg-list-show-more-div">您带领的本次活动获得其他参与者的平均评分为 <span>{{item.avgScore}}</span>，获得{{item.kaCurrency}}咖币回馈</p>
+
+
+<hr>
+<h3>参与者对本次活动的评价:</h3>
+
+<div class="cfun-activity-comments-div">
+  <div ng-repeat="comment in item.activity.comments" >
+    <a class="item item-avatar" href="#/tab/my/{{comment.id}}">
+      <img ng-src="{{comment.face}}">
+      <p>
+        <span class="cfun-activity-comment-title">{{comment.name}}</span>
+        <span class="cfun-activity-comment-content">{{comment.content}}</span>
+      </p>
+    </a>
+  </div>
+</div>

@@ -37,6 +37,16 @@ angular.module('starter.controllers')
     Msg.sendInvitationMsg();
     Msg.sendAttentionUserActivityMsg();
 
+    Msg.sendScoreArticleMsg();
+    Msg.sendScorePhotoMsg();
+    Msg.sendActivityAfterMsg();
+
+    Msg.sendConfirmToCaptainMsg();
+    Msg.sendCommentsAfterToCaptainMsg();
+    Msg.sendHisActivityMsg();
+    Msg.sendScoreFinishMsg();
+    Msg.sendAddImpressionMsg();
+    Msg.sendFocusOnMsg();
 
     $scope.messages = Msg.getMessages();
 

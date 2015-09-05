@@ -1,0 +1,43 @@
+<h2>活动评级：{{item.activity.name}}</h2>
+<p >{{item.activity.time}}</p>
+
+<label class="item-input">
+  <textarea placeholder="可以对该活动的评价吗？（评价后可获得5个咖币哟）"></textarea>
+</label>
+
+<hr>
+<h3>对小队长
+  <a href="#/tab/my/{{item.activity.captain.id}}">{{item.activity.captain.name}}</a>
+  的评分
+</h3>
+<div class="list">
+  <div class="range range-positive">
+    <i class="icon ion-ios-star-outline"></i>
+    <input type="range" name="volume" min="0" max="100" value="33">
+    <i class="icon ion-ios-star"></i>
+  </div>
+</div>
+
+
+
+<hr>
+<h3>他们给您留下了什么印象</h3>
+
+<div class="cfun-msg-list-after-impression">
+<label class="item-input" ng-repeat="apply in item.activity.applys">
+  <span class="input-label">
+    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{apply.id}}">
+      <img src="{{apply.face}}">
+      {{apply.name}}
+    </a>
+  </span>
+  <input type="text" placeholder="输入印象">
+</label>
+</div>
+
+<div class="cfun-msg-list-btns-div">
+
+  <button class="button button-outline button-block button-positive button-small">
+    提交评价 {{item.taskEndTime}} 前提交才有积分
+  </button>
+</div>

@@ -46,6 +46,19 @@ angular.module('starter.controllers')
         Msg.sendAttentionUserActivityMsg();
         Msg.sendToCaptainForApplyFinishMsg();
         Msg.sendInvitationMsg();
+      }else if(type == 'sys'){
+
+        Msg.sendConfirmToCaptainMsg();
+        Msg.sendCommentsAfterToCaptainMsg();
+        Msg.sendHisActivityMsg();
+        Msg.sendScoreFinishMsg();
+        Msg.sendAddImpressionMsg();
+        Msg.sendFocusOnMsg();
+
+      }else if(type == 'toCommentOn'){
+        Msg.sendScoreArticleMsg();
+        Msg.sendScorePhotoMsg();
+        Msg.sendActivityAfterMsg();
       }
 
     }
