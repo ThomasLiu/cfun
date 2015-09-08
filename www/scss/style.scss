@@ -16,7 +16,12 @@ a{
 .font-size-12px{
   font-size: $baseFontSize;
 }
-
+.bar.cfun-footer-has-full-btn{
+  .button{
+    margin-top: 0;
+    font-weight: bolder;
+  }
+}
 
 
 @import "../scss/activity/list"

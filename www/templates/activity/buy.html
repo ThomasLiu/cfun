@@ -1,0 +1,74 @@
+<ion-modal-view>
+
+  <div class="bar bar-header">
+    <button class="button" ng-click="closeBuyModal()">返回</button>
+
+  </div>
+  <ion-content>
+
+    <div class="list">
+      <div class="item item-divider">
+        选择套餐
+      </div>
+
+      <label class="item item-radio" ng-repeat="package in item.package">
+        <input type="radio" name="itemValue" ng-model="bug.itemValue" ng-value="package.value">
+        <div class="item-content">
+          套餐{{$index + 1}} {{package.remark}} {{package.value | currency}}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">购买份数</span>
+        <input type="number" ng-model="bug.itemNum">
+      </label>
+
+      <div class="item item-divider">
+        选择职责（选填）
+      </div>
+
+      <div class="item item-checkbox">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="bug.wantBeWriter">
+        </label>
+        申请做写手
+      </div>
+      <div class="cfun-activity-buy-info">
+        <ul>
+          <li>对活动感兴趣，有一定的文字功底；</li>
+          <li>活动结束后，结合媒体咖豆素材，写活动回顾(图文并茂)；</li>
+        </ul>
+      </div>
+
+
+      <div class="item item-checkbox">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="bug.wantBePhotographer">
+        </label>
+        申请做摄影师
+      </div>
+      <div class="cfun-activity-buy-info">
+        <ul>
+          <li>可胜任：摄影摄像、图片处理、视频剪辑</li>
+          <li>配合采访组，进行专访记录</li>
+          <li>活动现场，采集整理活动记录</li>
+        </ul>
+      </div>
+
+
+      <label class="item item-input">
+        <span class="input-label">联系手机</span>
+        <input type="text" ng-model="bug.mobile">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">验证码</span>
+        <input type="text">
+      </label>
+    </div>
+    <button class="button button-block button-positive" ng-click="toPay($event)">
+      共需支付 {{(bug.itemValue * bug.itemNum) | currency}}
+    </button>
+
+  </ion-content>
+</ion-modal-view>

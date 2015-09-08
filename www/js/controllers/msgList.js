@@ -15,18 +15,21 @@ angular.module('starter.controllers')
     , $stateParams
     , $log
     , $location
+    , $ionicNavBarDelegate
     , User
     , Msg) {
     var type = $stateParams.type;
     $log.log('MsgList Ctrl type = ' + type);
 
-
+    $ionicNavBarDelegate.showBackButton(true);
 
     $scope.currentUser = User.getCurrentUser();
 
 
 
     $scope.messagesList = Msg.getMessages()[type];
+
+
 
     $scope.seeActivity = function(index, activityId){
       $log.log('MsgList Ctrl seeActivity index = ' + index + ' | activityId = ' + activityId);
@@ -41,6 +44,33 @@ angular.module('starter.controllers')
       readMsg(index,$scope.messagesList);
     }
 
+    $scope.noticeCaptain = function(index){
+      $log.log('MsgList Ctrl noticeCaptain index = ' + index);
+      readMsg(index,$scope.messagesList);
+
+      Msg.sendActivityAfterMsg();
+    }
+
+    $scope.saveComment = function(index){
+      $log.log('MsgList Ctrl saveComment index = ' + index);
+
+      $scope.messagesList.noReadMsgs.baoremove(index);
+      Msg.sendAddImpressionMsg();
+      Msg.sendScoreArticleMsg();
+      Msg.sendScorePhotoMsg();
+    }
+    $scope.saveArticleComment = function(index){
+      $log.log('MsgList Ctrl saveArticleComment index = ' + index);
+
+      $scope.messagesList.noReadMsgs.baoremove(index);
+    }
+    $scope.savePhotoComment = function(index) {
+      $log.log('MsgList Ctrl savePhotoComment index = ' + index);
+
+      $scope.messagesList.noReadMsgs.baoremove(index);
+      Msg.sendHisActivityMsg();
+    }
+
 
     var readMsg = function(index, msgList){
 
@@ -53,7 +83,8 @@ angular.module('starter.controllers')
 
         Msg.getMessagesCount();
       }
-      
+
+
     }
 
     //if($scope.messagesList.noReadMsgs.length == 0){

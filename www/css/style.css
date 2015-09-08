@@ -8,6 +8,10 @@ a {
 .font-size-12px {
   font-size: 12px; }
 
+.bar.cfun-footer-has-full-btn .button {
+  margin-top: 0;
+  font-weight: bolder; }
+
 /**
  * activity - list
  * --------------------------------------------------
@@ -171,6 +175,12 @@ a {
   min-height: 27px;
   padding: 0 4px;
   margin: -2px 0 0 -10px; }
+
+.cfun-activity-buy-info {
+  padding: 4px 16px 10px;
+  color: #666666;
+  background-color: #ffffff;
+  font-size: 11px; }
 
 /**
  * my - user_info

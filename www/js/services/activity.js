@@ -52,6 +52,20 @@ angular.module('starter.services')
               , content: "I'm so happy"
               , face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'}
           ]
+          , package : [
+            {
+              value: 100
+              , remark: '包吃包喝'
+            }
+            , {
+              value: 150
+              , remark: '包吃包喝包车'
+            }
+            , {
+              value: 200
+              , remark: '包吃包喝包车包住'
+            }
+          ]
         }
           ,{
             id : 1
@@ -92,6 +106,20 @@ angular.module('starter.services')
                 name: 'Ben Sparrow'
                 , content: "I'm so happy"
                 , face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'}
+            ]
+            , package : [
+              {
+                value: 100
+                , remark: '包吃包喝'
+              }
+              , {
+                value: 150
+                , remark: '包吃包喝包车'
+              }
+              , {
+                value: 200
+                , remark: '包吃包喝包车包住'
+              }
             ]
           }
           ,{
@@ -134,6 +162,20 @@ angular.module('starter.services')
                 , content: 'THIS IS VERY FUNNY!!'
                 , face:'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'}
 
+            ]
+            , package : [
+              {
+                value: 100
+                , remark: '包吃包喝'
+              }
+              , {
+                value: 150
+                , remark: '包吃包喝包车'
+              }
+              , {
+                value: 200
+                , remark: '包吃包喝包车包住'
+              }
             ]
           }];
       }
