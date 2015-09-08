@@ -1,6 +1,6 @@
 <ion-view view-title="{{title}}">
-  <ion-nav-buttons side="right">
-    <a class="button button-clear" href="#/tab/edit" ng-if="user.id == currentUserId">编辑</a>
+  <ion-nav-buttons side="left">
+    <a class="button button-clear" ng-click="back()">返回</a>
   </ion-nav-buttons>
   <ion-content class="cfun-user-info-content">
 
@@ -25,10 +25,6 @@
         <a class="tab-item" href="#/users/{{user.id}}">
           <i class="icon">{{user.attentionUsers.length}}</i>
           好友
-        </a>
-        <a class="tab-item" ng-if="user.id == currentUserId">
-          <i class="icon">{{user.kaCurrency}}</i>
-          咖币
         </a>
       </div>
 

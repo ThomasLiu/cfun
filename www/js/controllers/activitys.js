@@ -12,8 +12,19 @@ angular.module('starter.controllers')
 
   .controller('ActivitysCtrl', function($scope
     , $log
-    , Activity) {
+    , $ionicModal
+    , $location
+    , Activity
+    , User) {
     $log.log('Activitys Ctrl');
+
+
+    var currentUser = User.getCurrentUser();
+    $log.log('Activitys Ctrl currentUser.id = ' + currentUser.id + ' | currentUser.id !== undefined ' + (currentUser.id !== undefined));
+
+    if(currentUser.id === undefined){
+      $location.path('/login');
+    }
 
     $scope.activityLists = Activity.list();
   });

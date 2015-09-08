@@ -11,7 +11,7 @@
 <h3>参与者 ({{item.activity.applys.length}})</h3>
 <div class="lsit cfun-msg-list-user-list-div">
   <div class="item item-icon-right" ng-repeat="user in item.activity.applys">
-    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+    <a class="item-avatar cfun-item-avatar-small" href="#/user/{{user.id}}">
       <img src="{{user.face}}">
       <span>{{user.name}} </span>
       <span class="balanced font-size-12px" ng-if="user.isReceived">已收到</span>
@@ -28,7 +28,7 @@
   <label class="item item-radio" ng-repeat="user in item.activity.applyPhotoMaker">
     <input type="radio" name="photoMaker" value="{{user.id}}" ng-checked="$first">
     <div class="item-content">
-      <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+      <a class="item-avatar cfun-item-avatar-small" href="#/user/{{user.id}}">
         <img src="{{user.face}}">
         <span>{{user.name}}</span>
       </a>
@@ -44,7 +44,7 @@
   <label class="item item-radio" ng-repeat="user in item.activity.applyArticleMaker">
     <input type="radio" name="articleMaker" value="{{user.id}}" ng-checked="$first">
     <div class="item-content">
-      <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{user.id}}">
+      <a class="item-avatar cfun-item-avatar-small" href="#/user/{{user.id}}">
         <img src="{{user.face}}">
         <span>{{user.name}}</span>
       </a>

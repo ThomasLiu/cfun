@@ -1,0 +1,43 @@
+<ion-view>
+
+  <ion-content>
+    <div class="list">
+      <div class="item item-divider">
+        选择感兴趣的活动类别
+      </div>
+      <div class="item item-checkbox" ng-repeat="activityType in activityTypes">
+        <label class="checkbox">
+          <input type="checkbox" ng-model="user.activityType[$index]" ng-true-value="'{{activityType}}'" ng-false-value=" ">
+        </label>
+        {{activityType}}
+      </div>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            选择地区
+          </div>
+          <select ng-model="user.area">
+            <option>罗湖</option>
+            <option selected>福田</option>
+            <option>龙岗</option>
+          </select>
+        </label>
+
+
+      <label class="item item-input">
+        <input type="text" ng-model="user.username" placeholder="手机号码">
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="user.username" placeholder="验证码">
+      </label>
+      <label class="item item-input">
+        <input type="password" ng-model="user.password" placeholder="登录密码">
+      </label>
+    </div>
+    <button class="button button-positive button-block" ng-click="sign()">
+      注册
+    </button>
+    <p class="text-center"><a href="#/login">已有账号，登录</a></p>
+
+  </ion-content>
+</ion-view>

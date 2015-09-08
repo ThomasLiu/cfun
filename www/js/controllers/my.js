@@ -14,6 +14,8 @@ angular.module('starter.controllers')
   .controller('MyCtrl', function($scope
     , $log
     , $stateParams
+    , $ionicHistory
+    , $ionicNavBarDelegate
     , User) {
     var id = $stateParams.id || User.getCurrentUser().id;
     $log.log('My Ctrl id = ' + id);
@@ -30,5 +32,10 @@ angular.module('starter.controllers')
       $scope.title = $scope.user.name;
     }
 
+
+    $ionicNavBarDelegate.showBackButton(false);
+    $scope.back = function(){
+      $ionicHistory.goBack(-1);
+    }
 
   });

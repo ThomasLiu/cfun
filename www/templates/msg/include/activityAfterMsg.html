@@ -7,7 +7,7 @@
 
 <hr>
 <h3>对小队长
-  <a href="#/tab/my/{{item.activity.captain.id}}">{{item.activity.captain.name}}</a>
+  <a href="#/user/{{item.activity.captain.id}}">{{item.activity.captain.name}}</a>
   的评分
 </h3>
 <div class="list">
@@ -26,7 +26,7 @@
 <div class="cfun-msg-list-after-impression">
 <label class="item-input" ng-repeat="apply in item.activity.applys">
   <span class="input-label">
-    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{apply.id}}">
+    <a class="item-avatar cfun-item-avatar-small" href="#/user/{{apply.id}}">
       <img src="{{apply.face}}">
       {{apply.name}}
     </a>

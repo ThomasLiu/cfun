@@ -44,7 +44,7 @@ angular.module('starter', ['ionic'
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
-    abstract: true,
+    //abstract: true,
     templateUrl: 'templates/tabs.html'
   })
 
@@ -60,14 +60,10 @@ angular.module('starter', ['ionic'
         }
       }
     })
-    .state('tab.activity', {
+    .state('activity', {
       url: '/activity/:id',
-      views: {
-        'tab-activity': {
-          templateUrl: 'templates/activity/view.html',
-          controller: 'ActivityCtrl'
-        }
-      }
+      templateUrl: 'templates/activity/view.html',
+      controller: 'ActivityCtrl'
     })
 
     // activity end ---------------------------------------
@@ -107,6 +103,11 @@ angular.module('starter', ['ionic'
         }
       }
     })
+    .state('user', {
+      url: '/user/:id',
+      templateUrl: 'templates/my/view.html',
+      controller: 'MyCtrl'
+    })
     .state('tab.edit', {
       url: '/edit',
       views: {
@@ -116,37 +117,33 @@ angular.module('starter', ['ionic'
         }
       }
     })
-    .state('tab.users', {
+    .state('users', {
       url: '/users/:id',
-      views: {
-        'tab-my': {
-          templateUrl: 'templates/my/list.html',
-          controller: 'UsersCtrl'
-        }
-      }
+      templateUrl: 'templates/my/list.html',
+      controller: 'UsersCtrl'
     })
-    .state('tab.hisActivitys', {
+    .state('hisActivitys', {
       url: '/hisActivitys/:id',
-      views: {
-        'tab-my': {
-          templateUrl: 'templates/his_activity/list.html',
-          controller: 'HisActivitysCtrl'
-        }
-      }
+      templateUrl: 'templates/his_activity/list.html',
+      controller: 'HisActivitysCtrl'
     })
-    .state('tab.hisActivity', {
+    .state('hisActivity', {
       url: '/hisActivity/:id',
-      views: {
-        'tab-my': {
-          templateUrl: 'templates/his_activity/view.html',
-          controller: 'HisActivityCtrl'
-        }
-      }
+      templateUrl: 'templates/his_activity/view.html',
+      controller: 'HisActivityCtrl'
     })
     // my end ---------------------------------------
 
-
-
+    .state('sign', {
+      url: '/sign',
+      templateUrl: 'templates/app/sign.html',
+      controller: 'AppCtrl'
+    })
+    .state('login', {
+      url: '/login',
+      templateUrl: 'templates/app/login.html',
+      controller: 'AppCtrl'
+    })
 
   ;
 

@@ -1,4 +1,7 @@
 <ion-view view-title="活动列表">
+  <ion-nav-buttons side="left">
+    <a class="button button-clear" ng-click="back()">返回</a>
+  </ion-nav-buttons>
   <ion-content class="padding cfun-his-acitivity-info">
     <h3>{{hisActivity.title}}</h3>
     <h5>{{hisActivity.time}}</h5>
@@ -22,7 +25,7 @@
         <span>文章提供:</span>
       </div>
       <div class="col col-75">
-        <a href="#/tab/my/{{hisActivity.articleFor.id}}">
+        <a href="#/user/{{hisActivity.articleFor.id}}">
           <img src="{{hisActivity.articleFor.face}}">
           <span>{{hisActivity.articleFor.name}}</span>
         </a>
@@ -33,7 +36,7 @@
         <span>照骗提供:</span>
       </div>
       <div class="col col-75">
-        <a href="#/tab/my/{{hisActivity.photoFor.id}}">
+        <a href="#/user/{{hisActivity.photoFor.id}}">
           <img src="{{hisActivity.photoFor.face}}">
           <span>{{hisActivity.photoFor.name}}</span>
         </a>
@@ -44,7 +47,7 @@
         <span>活动队长:</span>
       </div>
       <div class="col col-75">
-        <a href="#/tab/my/{{hisActivity.captain.id}}">
+        <a href="#/user/{{hisActivity.captain.id}}">
           <img src="{{hisActivity.captain.face}}">
           <span>{{hisActivity.captain.name}}</span>
         </a>
@@ -54,7 +57,7 @@
 
     <h5 class="positive">其他参与者</h5>
     <div>
-      <a href="#/tab/my/{{apply.id}}" ng-repeat="apply in hisActivity.applys">
+      <a href="#/user/{{apply.id}}" ng-repeat="apply in hisActivity.applys">
         <div class="cfun-samll-face-div" >
           <img ng-src="{{apply.face}}">
         </div>

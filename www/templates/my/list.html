@@ -1,10 +1,12 @@
 <ion-view view-title="关注">
 
-
+  <ion-nav-buttons side="left">
+    <a class="button button-clear" ng-click="back()">返回</a>
+  </ion-nav-buttons>
   <ion-content class="cfun-user-info-content">
 
     <div class="list">
-      <a class="item item-avatar" href="#/tab/my/{{user.id}}" ng-repeat="user in users">
+      <a class="item item-avatar" href="#/user/{{user.id}}" ng-repeat="user in users">
         <img ng-src="{{user.face}}">
         <h2>{{user.name}}</h2>
         <div class="cfun-my-interests-div">

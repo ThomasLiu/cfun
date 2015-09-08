@@ -11,11 +11,11 @@
 angular.module('starter.services')
   .factory('User', function($log, $q) {
     $log.log('User services');
+    var currentUser = {};
+
     return {
       getCurrentUser : function(){
-        return {
-          id : 0
-        }
+        return currentUser;
       }
       , getById: function(){
         return {};

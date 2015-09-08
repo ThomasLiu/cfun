@@ -1,14 +1,14 @@
-<h2>好友 <a href="#/tab/my/{{item.attentionUser.id}}">{{item.attentionUser.name}}</a> 报名了：{{item.activity.name}}</h2>
+<h2>好友 <a href="#/user/{{item.attentionUser.id}}">{{item.attentionUser.name}}</a> 报名了：{{item.activity.name}}</h2>
 <p>{{item.activity.area}}</p>
 <p>费用：{{item.activity.value | currency:"¥"}} ｜ 人数最多：{{item.activity.maxApply}}</p>
 <p class="cfun-msg-list-show-more-div">{{item.activity.time}}
-  <a class="cfun-msg-list-show-more positive" href="#/tab/activity/{{item.activity.id}}">显示详细</a></p>
+  <a class="cfun-msg-list-show-more positive" href="#/activity/{{item.activity.id}}">显示详细</a></p>
 
 <div class="cfun-msg-list-btns-div">
   <button class="button button-outline button-assertive button-small">
     不能去该活动
   </button>
-  <a class="button button-outline button-positive button-small pull-right" href="#/tab/activity/{{item.activity.id}}">
+  <a class="button button-outline button-positive button-small pull-right" href="#/activity/{{item.activity.id}}">
     立刻报名 {{item.activity.applyEndTime}} 截止报名
   </a>
 </div>

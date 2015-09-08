@@ -1,4 +1,7 @@
 <ion-view view-title="活动列表">
+  <ion-nav-buttons side="left">
+    <a class="button button-clear" ng-click="back()">返回</a>
+  </ion-nav-buttons>
   <ion-content class="cfun-his-acitivity-list">
     <ion-refresher
       pulling-text="Pull to refresh..."
@@ -6,7 +9,7 @@
     </ion-refresher>
 
     <div class="list card" ng-repeat="hisActivity in hisActivityLists">
-      <a href="#/tab/hisActivity/{{hisActivity.id}}">
+      <a href="#/hisActivity/{{hisActivity.id}}">
       <div class="item">
         <h2>{{hisActivity.title}}</h2>
         <p>{{hisActivity.time}}</p>

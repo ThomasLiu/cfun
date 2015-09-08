@@ -6,7 +6,7 @@
 <h3>小队长</h3>
 <div class="lsit cfun-msg-list-user-list-div">
   <div class="item item-icon-right">
-    <a class="item-avatar cfun-item-avatar-small" href="#/tab/my/{{item.activity.captain.id}}">
+    <a class="item-avatar cfun-item-avatar-small" href="#/user/{{item.activity.captain.id}}">
       <img src="{{item.activity.captain.face}}">
       <span>{{item.activity.captain.name}}</span>
     </a>
@@ -19,7 +19,7 @@
 
 <h3>其他参与者 ({{item.activity.applys.length}})</h3>
 <div>
-  <a href="#/tab/my/{{apply.id}}" ng-repeat="apply in item.activity.applys">
+  <a href="#/user/{{apply.id}}" ng-repeat="apply in item.activity.applys">
     <div class="cfun-samll-face-div" >
       <img ng-src="{{apply.face}}">
     </div>
@@ -29,14 +29,14 @@
 
 <div class="cfun-his-acitivity-role-div">
   <p class="cfun-msg-list-btns-div">
-    <a href="#/tab/my/{{item.activity.articleFor.id}}">
+    <a href="#/user/{{item.activity.articleFor.id}}">
       <img src="{{item.activity.articleFor.face}}">
       <span>{{item.activity.articleFor.name}}</span>
     </a>
     <span class="pull-right">御用写手</span>
   </p>
   <p class="cfun-msg-list-btns-div">
-    <a href="#/tab/my/{{item.activity.photoFor.id}}">
+    <a href="#/user/{{item.activity.photoFor.id}}">
       <img src="{{item.activity.photoFor.face}}">
       <span>{{item.activity.photoFor.name}}</span>
     </a>
