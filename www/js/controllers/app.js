@@ -16,7 +16,8 @@ angular.module('starter.controllers')
   .controller('AppCtrl', function($scope
     , $log
     , $location
-    , User) {
+    , User
+    , Msg) {
     $log.log('App Ctrl ');
 
     var currentUser = User.getCurrentUser();
@@ -25,6 +26,7 @@ angular.module('starter.controllers')
     $scope.sign = function(){
       $scope.user.id = 0;
 
+      //test 模拟流程
       Msg.sendRecruitMsg();
 
       $location.path('/tab/activitys');
@@ -33,6 +35,9 @@ angular.module('starter.controllers')
     $scope.login = function(){
       $scope.user.id = 0;
 
+      //test 模拟流程
+      Msg.sendInvitationMsg();
+      Msg.sendAttentionUserActivityMsg();
 
 
       $location.path('/tab/activitys');

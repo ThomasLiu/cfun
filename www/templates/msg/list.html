@@ -14,13 +14,8 @@
       <div class="item item-divider">
         已读消息
       </div>
-      <div class="item" ng-repeat="item in messagesList.readedMsgs">
-        <div class="card">
-          <div class="item item-text-wrap">
-            This is a basic Card which contains an item that has wrapping text.
-          </div>
-        </div>
-      </div>
+      <div class="item" ng-repeat="item in messagesList.readedMsgs"
+           ng-include="'templates/msg/include/' + item.type + '.html'"></div>
     </div>
   </ion-content>
 </ion-view>

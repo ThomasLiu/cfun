@@ -9,7 +9,7 @@
  */
 
 angular.module('starter.services')
-  .factory('Msg', function($log, $q, User) {
+  .factory('Msg', function($log, $q, $rootScope, User) {
     $log.log('Msg services');
 
     var messagesCount = 0;
@@ -31,13 +31,17 @@ angular.module('starter.services')
         , readedMsgs: []
       }
     };
-    var recruitMsgs = [];
-    return {
-      currentMessageCount: function() {
 
-        return messages.recruitMsg.noReadMsgs.length
-          + messages.activityMsg.noReadMsgs.length;
-      }
+    var getMessagesCount = function(){
+      messagesCount = messages.recruitMsg.noReadMsgs.length
+        + messages.activityMsg.noReadMsgs.length
+        + messages.toCommentOn.noReadMsgs.length
+        + messages.sys.noReadMsgs.length;
+      $rootScope.messagesCount = messagesCount;
+    }
+
+    return {
+      getMessagesCount: getMessagesCount
       , getMessages: function() {
         $log.debug('get messages');
         var currentUser = User.getCurrentUser();
@@ -67,6 +71,7 @@ angular.module('starter.services')
           , showMore : false
           , type : 'recruitMsg'
         });
+        getMessagesCount();
       }
       , sendToCaptainForApplyFinishMsg: function(){
         messages.activityMsg.noReadMsgs.push({
@@ -142,6 +147,7 @@ angular.module('starter.services')
           , type : 'toCaptainForApplyFinishMsg'
 
         });
+        getMessagesCount();
       }
       , sendAttentionUserActivityMsg: function() {
         messages.activityMsg.noReadMsgs.push({
@@ -165,7 +171,7 @@ angular.module('starter.services')
           }
           , type : 'attentionUserActivityMsg'
         });
-
+        getMessagesCount();
       }
       , sendFailToApplyCaptainMsg: function(){
         messages.activityMsg.noReadMsgs.push({
@@ -184,7 +190,7 @@ angular.module('starter.services')
           }
           , type : 'failToApplyCaptainMsg'
         });
-
+        getMessagesCount();
       }
       , sendReadyGoMsg: function() {
         messages.activityMsg.noReadMsgs.push({
@@ -224,7 +230,7 @@ angular.module('starter.services')
           }
           , type : 'readyGoMsg'
         });
-
+        getMessagesCount();
       }
       , sendBecomeCaptainMsg: function(){
         messages.activityMsg.noReadMsgs.push({
@@ -242,6 +248,7 @@ angular.module('starter.services')
           }
           , type : 'becomeCaptainMsg'
         });
+        getMessagesCount();
       }
       , sendWriterAfterMsg: function(){
         messages.activityMsg.noReadMsgs.push({
@@ -255,6 +262,7 @@ angular.module('starter.services')
           , taskEndTime : '9月3日'
           , type : 'writerAfterMsg'
         });
+        getMessagesCount();
       }
       , sendPhotographerAfterMsg: function () {
         messages.activityMsg.noReadMsgs.push({
@@ -268,6 +276,7 @@ angular.module('starter.services')
           , taskEndTime : '9月3日'
           , type : 'photographerAfterMsg'
         });
+        getMessagesCount();
       }
       , sendInvitationMsg: function(userIds, activity) {
         messages.activityMsg.noReadMsgs.push({
@@ -291,6 +300,7 @@ angular.module('starter.services')
           }
           , type : 'invitationMsg'
         });
+        getMessagesCount();
       }
       , sendScoreArticleMsg: function(){
         messages.toCommentOn.noReadMsgs.push({
@@ -312,6 +322,7 @@ angular.module('starter.services')
           , taskEndTime : '9月3日'
           , type : 'scoreArticleMsg'
         });
+        getMessagesCount();
       }
       , sendScorePhotoMsg: function(){
         messages.toCommentOn.noReadMsgs.push({
@@ -333,7 +344,7 @@ angular.module('starter.services')
           , taskEndTime : '9月3日'
           , type : 'scorePhotoMsg'
         });
-
+        getMessagesCount();
       }
       , sendActivityAfterMsg: function(){
         messages.toCommentOn.noReadMsgs.push({
@@ -376,6 +387,7 @@ angular.module('starter.services')
           , taskEndTime : '9月3日'
           , type : 'activityAfterMsg'
         });
+        getMessagesCount();
       }
       , sendAddImpressionMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -387,6 +399,7 @@ angular.module('starter.services')
           , content : '对你添加了‘高富帅’的印象'
           , type : 'userMsg'
         });
+        getMessagesCount();
       }
       , sendFocusOnMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -398,6 +411,7 @@ angular.module('starter.services')
           , content : '关注了你'
           , type : 'userMsg'
         });
+        getMessagesCount();
       }
       , sendConfirmToCaptainMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -413,6 +427,7 @@ angular.module('starter.services')
           }
           , type : 'confirmToCaptainMsg'
         });
+        getMessagesCount();
       }
       , sendScoreFinishMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -426,6 +441,7 @@ angular.module('starter.services')
           , kaCurrency : 87
           , type : 'scoreFinishMsg'
         });
+        getMessagesCount();
       }
       , sendHisActivityMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -437,7 +453,7 @@ angular.module('starter.services')
           }
           , type : 'hisActivityMsg'
         });
-
+        getMessagesCount();
       }
       , sendCommentsAfterToCaptainMsg: function(){
         messages.sys.noReadMsgs.push({
@@ -469,7 +485,7 @@ angular.module('starter.services')
           , kaCurrency : 87
           , type : 'commentsAfterToCaptainMsg'
         });
-
+        getMessagesCount();
       }
     }
   });

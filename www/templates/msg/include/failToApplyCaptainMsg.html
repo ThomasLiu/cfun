@@ -5,10 +5,10 @@
   <a class="cfun-msg-list-show-more positive" href="#/activity/{{item.activity.id}}">显示详细</a></p>
 
 <div class="cfun-msg-list-btns-div">
-  <button class="button button-outline button-assertive button-small">
+  <button class="button button-outline button-assertive button-small" ng-click="cantGoToThis($index)" ng-if="!item.isNoReaded">
     不能去该活动
   </button>
-  <a class="button button-outline button-positive button-small pull-right" href="#/activity/{{item.activity.id}}">
+  <button class="button button-outline button-positive button-small pull-right" ng-click="seeActivity($index, item.activity.id)" >
     立刻报名 {{item.activity.applyEndTime}} 截止报名
-  </a>
+  </button>
 </div>
