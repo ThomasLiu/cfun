@@ -30,26 +30,52 @@ angular.module('starter.controllers')
     $scope.messagesList = Msg.getMessages()[type];
 
 
+    $scope.noticeReady = function(index){
+      $log.log('MsgList Ctrl noticeReady index = ' + index);
+      readMsg(index,$scope.messagesList);
+
+      Msg.sendCommentsAfterToCaptainMsg();
+
+    };
+
+    $scope.invitation = function(index){
+      $log.log('MsgList Ctrl invitation index = ' + index);
+      readMsg(index,$scope.messagesList);
+
+      Msg.sendToCaptainForApplyFinishMsg();
+      $location.path('/users/' + $scope.currentUser.id);
+    };
 
     $scope.seeActivity = function(index, activityId){
       $log.log('MsgList Ctrl seeActivity index = ' + index + ' | activityId = ' + activityId);
       readMsg(index,$scope.messagesList);
 
       $location.path('/activity/' + activityId);
-    }
+    };
 
     $scope.cantGoToThis = function(index){
       $log.log('MsgList Ctrl cantGoToThis index = ' + index);
 
       readMsg(index,$scope.messagesList);
-    }
+    };
+
+    $scope.applyBeCaptain = function(index){
+      $log.log('MsgList Ctrl applyBeCaptain index = ' + index);
+
+      readMsg(index,$scope.messagesList);
+
+      Msg.sendBecomeCaptainMsg();
+      Msg.sendFailToApplyCaptainMsg();
+    };
 
     $scope.noticeCaptain = function(index){
       $log.log('MsgList Ctrl noticeCaptain index = ' + index);
       readMsg(index,$scope.messagesList);
 
       Msg.sendActivityAfterMsg();
-    }
+      Msg.sendPhotographerAfterMsg();
+      Msg.sendActivityAfterMsg();
+    };
 
     $scope.saveComment = function(index){
       $log.log('MsgList Ctrl saveComment index = ' + index);
@@ -58,18 +84,18 @@ angular.module('starter.controllers')
       Msg.sendAddImpressionMsg();
       Msg.sendScoreArticleMsg();
       Msg.sendScorePhotoMsg();
-    }
+    };
     $scope.saveArticleComment = function(index){
       $log.log('MsgList Ctrl saveArticleComment index = ' + index);
 
       $scope.messagesList.noReadMsgs.baoremove(index);
-    }
+    };
     $scope.savePhotoComment = function(index) {
       $log.log('MsgList Ctrl savePhotoComment index = ' + index);
 
       $scope.messagesList.noReadMsgs.baoremove(index);
       Msg.sendHisActivityMsg();
-    }
+    };
 
 
     var readMsg = function(index, msgList){
@@ -85,7 +111,7 @@ angular.module('starter.controllers')
       }
 
 
-    }
+    };
 
     //if($scope.messagesList.noReadMsgs.length == 0){
     //  if(type == 'recruitMsg'){
@@ -122,4 +148,4 @@ Array.prototype.baoremove = function(dx)
 {
   if(isNaN(dx) || dx>this.length){return false;}
   this.splice(dx,1);
-}
+};
